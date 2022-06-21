@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="css/musicStore.css">
+    <title>Document</title>
+    <script type="module" src="js/main.js"></script>
+    <script src="underscore-min.js"></script>
+</head>
+<body>
+    <header class="container-fluid d-flex align-items-center">
+        <div class="container text-center">
+            <h1>Music Store!</h1>
+        </div>
+    </header>
+    <main class="container-fluid"> 
+
+    <div class="dark d-none" id="id_dark">
+        <div class="dark_box text-center">
+            <img src="" class="w-100">
+            <div id="id_tag_dark">Tags:</div>
+            <button id="dark_close_btn" class="btn btn-danger mt-3">close</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="d-flex align-items-center py-3">
+            <label>Search:</label>
+            <input type="text" id="id_search" class="mx-2 form-control w-50" >
+            <button id="search_btn" class="btn btn-info">Search</button>
+            <select id="id_sort_select" class="ml-2 form-control w-25">
+                <option value="">Sorty by...</option>
+                <option value="rank">rank</option>
+                <option value="duration">duration</option>
+            </select>
+        </div>
+        <div class="row" id="id_row">
+         
+        </div>
+    </div>
+    </main>
+</body>
+</html>
